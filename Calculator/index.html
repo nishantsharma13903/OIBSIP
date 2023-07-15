@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
+    <title>Calculator</title>
+</head>
+<body>
+    
+    <div class="main-container">
+        <div class="mc-sec">
+            <div class="content">
+                <h1>Calculator</h1>
+                <p>Made By Nishant Sharma</p>
+            </div>
+        </div>
+        <div class="mc-sec">
+            <div class="calc-cont">
+                <div class="cc1">
+                    <input type="text" id="calc-id" readonly>
+                </div>
+                <div class="cc2">
+                    <div class="d-even">
+                        <button onclick="appendtoValue('(')">(</button>
+                        <button onclick="appendtoValue(')')">)</button>
+                        <button onclick="delValue()" style="background-color: orangered;color: white;">DE</button>
+                        <button onclick="clearAll()" style="background-color: orangered;color: white;">AC</button>
+                    </div>
+                    <div class="d-even">
+                        <button onclick="appendtoValue('1')">1</button>
+                        <button onclick="appendtoValue('2')">2</button>
+                        <button onclick="appendtoValue('3')">3</button>
+                        <button onclick="appendtoValue('+')">+</button>
+                    </div>
+                    <div class="d-even">
+                        <button onclick="appendtoValue('4')">4</button>
+                        <button onclick="appendtoValue('5')">5</button>
+                        <button onclick="appendtoValue('6')">6</button>
+                        <button onclick="appendtoValue('-')">-</button>
+                    </div>
+                    <div class="d-even">
+                        <button onclick="appendtoValue('7')">7</button>
+                        <button onclick="appendtoValue('8')">8</button>
+                        <button onclick="appendtoValue('9')">9</button>
+                        <button onclick="appendtoValue('*')">*</button>
+                    </div>
+                    <div class="d-even">
+                        <button onclick="appendtoValue('0')">0</button>
+                        <button onclick="appendtoValue('00')">00</button>
+                        <button onclick="appendtoValue('/')">/</button>
+                        <button onclick="evalResult()" style="background-color: orangered;color: white;">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
